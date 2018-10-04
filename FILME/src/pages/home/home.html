@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  
+    <ion-list >
+        <ion-item *ngFor="let filme of filmes"  (click)="irParaDestino(filme)">
+        <h2>{{filme.titulo}}</h2>
+        <h2>{{filme.descricao}}</h2>
+		<h2>{{filme.posterPath}}</h2>
+		<h2>{{filme.diretor}}</h2>
+		<h2>{{filme.popularidade}}</h2>
+		<h2>{{filme.dataLacamento}}</h2>
+	    <h2>{{genero.nome}}</h2>
+        </ion-item>
+       </ion-list>
+
+    
+</ion-content>
